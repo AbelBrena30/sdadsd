@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Animaciones CyP</title>
+        <link rel="stylesheet" href="animaciones.css" />
+    </head>
+    <body>
+        <!-- Header y nav eliminados -->
+        <nav class="navbar-glass">
+            <a href="index.html">INICIO</a>
+            <a href="disenos.html">DISEÑO</a>
+            <a href="animaciones.html">ANIMACIONES</a>
+            <a href="#configuracion">CONFIGURACION</a>
+        </nav>
+        <section>
+            <h2>Ejemplo de Animación CSS</h2>
+            <div class="animacion-demo"></div>
+            <pre><code>
+.animacion-demo {
+    animation: mover 2s infinite alternate;
+}
+@keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(300px); }
+}
+        </code></pre>
+        </section>
+    </body>
+</html>

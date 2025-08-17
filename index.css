@@ -1,0 +1,96 @@
+/* Navbar glass sobrepuesto */
+.navbar-glass {
+    position: fixed;
+    top: 0;
+    left: -10px;
+    width: 100vw;
+    justify-content: center;
+    right: unset;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(
+        90deg,
+        rgba(10, 10, 10, 0.85) 0%,
+        rgba(80, 80, 80, 0.7) 100%
+    );
+    color: #f5f5f5;
+    box-shadow: 0 4px 24px rgba(30, 30, 30, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    z-index: 1001;
+}
+.navbar-glass a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+.navbar-glass a:hover {
+    background: rgba(255, 255, 255, 0.28);
+    color: #6d6d6d;
+}
+/* Botón menú estilo glass sobrepuesto */
+.menu-glass {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    padding: 1rem 2.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.18);
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    z-index: 1001;
+}
+.menu-glass:hover {
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 6px 32px rgba(0, 0, 0, 0.22);
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #111 0%, #888 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+    position: absolute;
+    top: 56px; /* Altura del header */
+    left: -10px;
+    width: 100%;
+    z-index: 999;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* main eliminado */
+
+header,
+nav {
+    position: relative;
+    z-index: 1;
+}
